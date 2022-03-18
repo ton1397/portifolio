@@ -1,26 +1,69 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<div id="main-page" :class="theme">
+		<navbar-header/>
+		<div data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0" tabindex="0">
+			<inicio/>
+			<curriculo/>
+			<projetos/>
+			<habilidades/>
+			<experiencias/>
+			<contato/>
+			<footer-menu/>
+		</div>
+		
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavbarHeader from "./components/NavbarHeader.vue"
+import Inicio from "./components/Inicio.vue"
+import Curriculo from "./components/Curriculo.vue"
+import Projetos from "./components/Projetos.vue"
+import Habilidades from "./components/Habilidades.vue"
+import Experiencias from "./components/Experiencias.vue"
+import Contato from "./components/Contato.vue"
+import FooterMenu from "./components/FooterMenu.vue"
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	name: "App",
+	components: {
+		NavbarHeader,
+		Inicio,
+		Curriculo,
+		Projetos,
+		Habilidades,
+		Experiencias,
+		Contato,
+		FooterMenu
+	},
+	data(){
+		return{
+			theme: "light"
+		}
+	},
+	mounted(){
+		document.addEventListener('scroll', this.changeNavbar);
+	},
+	methods:{
+		changeTheme(theme){
+			this.theme = theme
+		},
+		changeNavbar(){
+			let scrollPosition = document.querySelector("html").scrollTop;
+			if (scrollPosition > 50) {
+				document.querySelector(".navbar-header .navbar").classList.add('navbar-scrolled-theme')
+				document.querySelector("#scrollTop").classList.add('fadeIn')
+				
+			}else{
+				document.querySelector(".navbar-header .navbar").classList.remove('navbar-scrolled-theme')
+				document.querySelector("#scrollTop").classList.remove('fadeIn')
+			}
+		},
+		scrollToElement(){
+			let link = event.target
+			let href = link.getAttribute('href')
+			let element = document.querySelector(href)
+			element.scrollIntoView();
+		}
+	}
+};
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
