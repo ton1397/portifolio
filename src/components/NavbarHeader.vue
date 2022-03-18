@@ -2,9 +2,9 @@
 	<div class="navbar-header">
 	<nav id="navbar-menu" class="navbar fixed-top navbar-expand-md navbar-dark">
 		<div class="container">
-			<a class="navbar-brand" href="#"><img src="../assets/logo_portifolio3.png"></a>
+			<a class="navbar-brand" href="#"><img src="../assets/logo_portifolio.png"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
-				<span><font-awesome-icon icon="bars" /></span>
+				<span><font-awesome-icon :icon="['fas','bars']" /></span>
 			</button>
 			<div class="collapse navbar-collapse" id="nav-list">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">

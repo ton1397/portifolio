@@ -6,12 +6,11 @@ import 'bootstrap';
 import './styles/themes.scss'
 
 import {library} from '@fortawesome/fontawesome-svg-core'
-import { fas,faMoon } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faArrowUp, faBars, faMoon, faSun, faDownload, faLocationDot, faPhone, faEnvelope, faCopyright } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(fas,far,fab,faMoon)
+library.add(faArrowUp, faBars, faMoon, faSun, faDownload, faLocationDot, faPhone, faEnvelope, faWhatsapp, faCopyright, faLinkedin, faGithub)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

@@ -8,7 +8,7 @@
 			<p>Fiz diversos de programação como Sass, PHP, VueJs, Javascript, NodeJs.</p>
 			<p>Para detalhes, baixe meu currículo no botão abaixo.</p>
 			<button id="btn-download-cv" class="btn btn-outline-danger btn-lg" @click="downloadCV">
-				<font-awesome-icon icon="download" />
+				<font-awesome-icon :icon="['fas','download']" />
 				Baixar PDF
 			</button>
 
