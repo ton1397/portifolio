@@ -5,7 +5,7 @@
 			<p>Atualmente trabalho como programador jr. na pagina viva CRM.</p>
 			<p>Sou formado em análise e desenvolvimento de sistemas na universidade UNIP.</p>
 			<p>Concluí o curso tecnico de informática com ênfase em programação.</p>
-			<p>Fiz diversos de programação como Sass, PHP, VueJs, Javascript, NodeJs.</p>
+			<p>Já concluí diversos cursos de programação como Sass, PHP, VueJs, Javascript, NodeJs.</p>
 			<p>Para detalhes, baixe meu currículo no botão abaixo.</p>
 			<button id="btn-download-cv" class="btn btn-outline-danger btn-lg" @click="downloadCV">
 				<font-awesome-icon :icon="['fas','download']" />

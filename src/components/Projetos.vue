@@ -21,6 +21,15 @@
 						</div>
 					</div>
 				</div>
+				<div class="projeto" id="projeto-organiza-meu-bolso">
+					<div class="projetos-container">
+						<div class="projetos-title">Organiza meu bolso</div>
+						<div class="projetos-description">Um projeto moderno com objetivo de gerenciar suas finanças.</div>
+						<div class="projetos-action">
+							<a class="btn btn-outline-light btn-sm" href="https://organiza-meu-bolso.netlify.app/"  target="blank">Ver Página</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
