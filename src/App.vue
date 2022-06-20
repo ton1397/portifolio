@@ -1,7 +1,7 @@
 <template>
 	<div id="main-page" :class="theme">
 		<navbar-header/>
-		<div data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0" tabindex="0">
+		<div>
 			<inicio/>
 			<curriculo/>
 			<projetos/>
@@ -58,9 +58,7 @@ export default {
 				document.querySelector("#scrollTop").classList.remove('fadeIn')
 			}
 		},
-		scrollToElement(){
-			let link = event.target
-			let href = link.getAttribute('href')
+		scrollToElement(href){
 			let element = document.querySelector(href)
 			element.scrollIntoView();
 		}

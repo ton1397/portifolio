@@ -12,7 +12,7 @@
 						Trabalho com Desenvolvimento Web
 					</h1>
 					<br><br>
-					<a class="btn btn-outline-light btn-lg" href="#contato" @click.prevent="$parent.scrollToElement">Entre em contato</a>
+					<a class="btn btn-outline-light btn-lg" href="#contato" @click.prevent="$parent.scrollToElement('#contato')">Entre em contato</a>
 				</div>
 			</div>
 		</div>
