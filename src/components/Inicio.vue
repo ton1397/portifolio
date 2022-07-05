@@ -1,5 +1,5 @@
 <template>
-	<div class="page-content" id="inicio">
+	<div class="page-content content-page-animation" id="inicio">
 		<div class="pagetop">
 			<div class="container">
 				<br>

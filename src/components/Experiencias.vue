@@ -1,5 +1,5 @@
 <template>
-	<div class="page-view" id="experiencias">
+	<div class="page-view content-page-animation" id="experiencias">
 		<div class="container">
 			<h1 class="mb-5">Experiências</h1>
 			<ul class="timeline text-start">

@@ -1,5 +1,5 @@
 <template>
-	<div class="page-view" id="curriculo">
+	<div class="page-view content-page-animation" id="curriculo">
 		<div class="container">
 			<h1 class="mb-5">Curriculo</h1>
 			<p>Atualmente trabalho como programador jr. na pagina viva CRM.</p>
@@ -21,8 +21,8 @@ export default {
 	methods:{
 		downloadCV(){
 			var anchor=document.createElement('a');
-			anchor.setAttribute('href','/CV/Wellington_CV.pdf');
-			anchor.setAttribute('download','Wellington_CV.pdf');
+			anchor.setAttribute('href','/CV/CV.pdf');
+			anchor.setAttribute('download','CV.pdf');
 			document.body.appendChild(anchor);
 			anchor.click();
 			anchor.parentNode.removeChild(anchor);

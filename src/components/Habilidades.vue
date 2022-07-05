@@ -1,5 +1,5 @@
 <template>
-	<div id="habilidades" class="page-view">
+	<div id="habilidades" class="page-view content-page-animation">
 		<div class="container">
 			<h1 class="mb-5">Habilidades</h1>
 			<div class="habilidades-container">

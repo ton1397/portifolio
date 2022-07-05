@@ -17,6 +17,16 @@ html {
 	text-align: center;
 }
 
+.content-page-animation {
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.content-page-show {
+    opacity: 1;
+    transition: all 0.8s;
+}
+
 .navbar-brand img{
 	width: 30px;
 }

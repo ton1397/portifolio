@@ -1,5 +1,5 @@
 <template>
-	<div class="page-view" id="projetos">
+	<div class="page-view content-page-animation" id="projetos">
 		<div class="container">
 			<h1 class="mb-5">Projetos</h1>
 			<div class="row mx-auto">

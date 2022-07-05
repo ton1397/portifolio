@@ -42,6 +42,11 @@ export default {
 	},
 	mounted(){
 		document.addEventListener('scroll', this.changeNavbar);
+		
+		setTimeout(() => {
+			document.getElementById('inicio').classList.add('content-page-show')
+		}, 100);
+		
 	},
 	methods:{
 		changeTheme(theme){
@@ -56,6 +61,21 @@ export default {
 			}else{
 				document.querySelector(".navbar-header .navbar").classList.remove('navbar-scrolled-theme')
 				document.querySelector("#scrollTop").classList.remove('fadeIn')
+			}
+
+			let elementsArray = document.querySelectorAll(".content-page-animation");
+			for(let i=0; i < elementsArray.length; i++){
+				var rect = elementsArray[i].getBoundingClientRect();
+				var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+				if(!(rect.bottom < 0 || rect.top - viewHeight >= 0)){
+					if(elementsArray[i].className.indexOf('content-page-show') == -1){
+						elementsArray[i].classList.add('content-page-show')
+					}
+				}else{
+					if(elementsArray[i].className.indexOf('content-page-show') != -1){
+						elementsArray[i].classList.remove('content-page-show')
+					}
+				}
 			}
 		},
 		scrollToElement(href){

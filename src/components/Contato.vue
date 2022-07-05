@@ -1,5 +1,5 @@
 <template>
-	<div class="page-view" id="contato">
+	<div class="page-view content-page-animation" id="contato">
 		<div class="container">
 			<h1>Contato</h1>
 			<div class="contato-container">
