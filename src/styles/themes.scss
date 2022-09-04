@@ -81,7 +81,7 @@ span{
 .page-content{
 	color: $white;
 	padding-top: 80px;
-	background: linear-gradient(rgb(92 21 195), rgb(0 0 0));
+	background:  linear-gradient(rgba(0,0,0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/pagetop-bg.jpg);
 	background-size: cover;
     background-position: center;
     height: 80vh;
@@ -173,6 +173,20 @@ span{
 			background: linear-gradient(rgba(0,0,0, 0.7), rgba(0, 0, 0, 0.3)), url(../assets/Calculadora-vue-capture.PNG);
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
+		}
+	}
+
+	&#projeto-bookmark-landing-page{
+		background: url(../assets/Bookmark-landing-page-capture.PNG);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+		&:hover{
+			background: linear-gradient(rgba(0,0,0, 0.7), rgba(0, 0, 0, 0.3)), url(../assets/Bookmark-landing-page-capture.PNG);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+
+			
 		}
 	}
 
