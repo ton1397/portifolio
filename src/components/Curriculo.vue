@@ -2,7 +2,7 @@
 	<div class="page-view content-page-animation" id="curriculo">
 		<div class="container">
 			<h1 class="mb-5">Curriculo</h1>
-			<p>Atualmente trabalho como programador jr. na pagina viva CRM.</p>
+			<p>Atualmente trabalho como programador pleno. na empresa ECWSA.</p>
 			<p>Sou formado em análise e desenvolvimento de sistemas na universidade UNIP.</p>
 			<p>Concluí o curso tecnico de informática com ênfase em programação.</p>
 			<p>Já concluí diversos cursos de programação como Sass, PHP, VueJs, Javascript, NodeJs.</p>

@@ -3,10 +3,23 @@
 		<div class="container">
 			<h1 class="mb-5">Experiências</h1>
 			<ul class="timeline text-start">
+				<li class="timeline-item ms-3 pb-4">
+					<div class="row no-gutter">
+					<div class="col-lg-5 mb-4 mb-lg-0">
+						<p class="font-weight-bold mb-2 text-primary text-small">07/2022 - Atualmente</p>
+						<h2 class="h6 mb-0 text-uppercase">ECWSA</h2>
+						<p class="text-small mb-0">Frontend pleno</p>
+						<span class="small text-muted">São Paulo</span>
+					</div>
+					<div class="col-lg-7">
+						<p class="text-muted">Desenvolvimento de softwares, landing pages, funcionalidades em vuejs</p>                  
+					</div>
+					</div>
+				</li>
                 <li class="timeline-item ms-3 pb-4">
 					<div class="row no-gutter">
 					<div class="col-lg-5 mb-4 mb-lg-0">
-						<p class="font-weight-bold mb-2 text-primary text-small">08/2019 - Atualmente</p>
+						<p class="font-weight-bold mb-2 text-primary text-small">08/2019 - 07/2022</p>
 						<h2 class="h6 mb-0 text-uppercase">PaginaViva CRM</h2>
 						<p class="text-small mb-0">Programador Jr.</p>
 						<span class="small text-muted">São Paulo</span>
