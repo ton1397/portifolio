@@ -1,6 +1,0 @@
-# Ignorar todos os arquivos e pastas
-*
-
-# Exceto a pasta de build do Vue.js
-!/docs
-!/docs/*
