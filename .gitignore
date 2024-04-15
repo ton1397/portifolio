@@ -2,4 +2,5 @@
 *
 
 # Exceto a pasta de build do Vue.js
-!/dist/
+!/dist
+!/dist/*
