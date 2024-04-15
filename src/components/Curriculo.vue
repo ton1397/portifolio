@@ -21,7 +21,7 @@ export default {
 	methods:{
 		downloadCV(){
 			var anchor=document.createElement('a');
-			anchor.setAttribute('href','/CV/CV.pdf');
+			anchor.setAttribute('href','CV.pdf')
 			anchor.setAttribute('download','CV.pdf');
 			document.body.appendChild(anchor);
 			anchor.click();
