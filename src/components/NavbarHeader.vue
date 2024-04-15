@@ -2,7 +2,7 @@
 	<div class="navbar-header">
 	<nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-dark">
 		<div class="container">
-			<a class="navbar-brand" href="#"><img src="../assets/logo_portifolio.PNG"></a>
+			<a class="navbar-brand" href="#"><img src="../assets/logo.png"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
 				<span><font-awesome-icon :icon="['fas','bars']" /></span>
 			</button>
