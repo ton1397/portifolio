@@ -1,8 +1,10 @@
 <template>
 	<div class="navbar-header">
-	<nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-dark">
+	<nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-transparent">
 		<div class="container">
-			<a class="navbar-brand" href="#"><img src="../assets/logo.png"></a>
+			<a class="navbar-brand" href="#">
+				<img src="@/assets/logo.png"/>
+			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
 				<span><font-awesome-icon :icon="['fas','bars']" /></span>
 			</button>
@@ -27,6 +29,7 @@
 						<a class="nav-link" href="#contato" @click.prevent="$parent.scrollToElement('#contato')">Contato</a>
 					</li>
 				</ul>
+				<!--
 					<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
 						<li class="nav-item d-flex">
 							<div class="theme-switch-button m-auto">
@@ -39,6 +42,7 @@
 							</div>
 						</li>
 					</ul>
+				-->
 			</div>
 		</div>
 	</nav>
@@ -55,8 +59,10 @@ export default {
 			return this.$parent.theme
 		}
 	},
-	mounted(){
-		
+	data(){
+		return {
+			logo: "logo.png"
+		}
 	},
 	methods:{
 		toogleTheme(){

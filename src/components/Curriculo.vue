@@ -1,13 +1,13 @@
 <template>
 	<div class="page-view content-page-animation" id="curriculo">
 		<div class="container">
-			<h1 class="mb-5">Curriculo</h1>
+			<h1 class="mb-5 fw-bold">Curriculo</h1>
 			<p>Atualmente trabalho como programador pleno. na empresa ECWSA.</p>
 			<p>Sou formado em análise e desenvolvimento de sistemas na universidade UNIP.</p>
 			<p>Concluí o curso tecnico de informática com ênfase em programação.</p>
 			<p>Já concluí diversos cursos de programação como Sass, PHP, VueJs, Javascript, NodeJs.</p>
 			<p>Para detalhes, baixe meu currículo no botão abaixo.</p>
-			<button id="btn-download-cv" class="btn btn-outline-danger btn-lg" @click="downloadCV">
+			<button id="btn-download-cv" class="btn btn-outline-primary btn-lg" @click="downloadCV">
 				<font-awesome-icon :icon="['fas','download']" />
 				Baixar PDF
 			</button>

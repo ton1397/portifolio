@@ -1,16 +1,21 @@
+
+$bg-theme: #000;
+$color-theme: #2acdff;
+
 .dark{
-	background-color: #333;
+	background-color: $bg-theme;
 	transition: .3s;
 
-	.page-view{
-		color: #fff;
-	}
-
 	.navbar-scrolled-theme{
-		background-color: #333;
+		background-color: $color-theme !important;
+		color: #fff;
 
 		.nav-item a.active, .nav-item a:hover{
-			border-bottom: 2px solid #fff;
+			border-bottom: 2px solid;
+		}
+
+		.nav-link{
+			color: $bg-theme !important;
 		}
 
 		.theme-switch-label{
@@ -33,10 +38,13 @@
 		padding: 25px;
 	}
 
+	.pagetop-image img{
+		width: 100%; 
+	}
+
 	
 	@media screen and (max-width: 767px){
 		.navbar-header .navbar-collapse{
-			background-color: #333;
 			border-radius: 10px;
 		}
 		.theme-switch-label{
@@ -45,6 +53,16 @@
 			#switch-ball{
 				background-color: #fff;
 			}
+		}
+
+		.pagetop{
+			.row{
+				margin-top: 100px !important;
+			}
+		}
+
+		.pagetop-image img{
+			max-width: 360px;
 		}
 	}
 }

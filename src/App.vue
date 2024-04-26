@@ -1,5 +1,6 @@
 <template>
 	<div id="main-page" :class="theme">
+		<Cursor/>
 		<navbar-header/>
 		<div>
 			<inicio/>
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+import Cursor from "./components/Cursor.vue"
 import NavbarHeader from "./components/NavbarHeader.vue"
 import Inicio from "./components/Inicio.vue"
 import Curriculo from "./components/Curriculo.vue"
@@ -26,6 +28,7 @@ import FooterMenu from "./components/FooterMenu.vue"
 export default {
 	name: "App",
 	components: {
+		Cursor,
 		NavbarHeader,
 		Inicio,
 		Curriculo,
@@ -37,7 +40,7 @@ export default {
 	},
 	data(){
 		return{
-			theme: "light"
+			theme: "dark"
 		}
 	},
 	mounted(){
