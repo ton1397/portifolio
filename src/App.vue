@@ -26,7 +26,6 @@ import Experiencias from "./components/Experiencias.vue"
 import Contato from "./components/Contato.vue"
 import FooterMenu from "./components/FooterMenu.vue"
 import throttle from 'lodash/throttle';
-
 export default {
 	name: "App",
 	components: {

@@ -20,13 +20,14 @@ html {
   
   /* Track */
   ::-webkit-scrollbar-track {
-	background: transparent; 
+	background: $bg-theme; 
 	opacity: .4;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-	background: $bg-theme; 
+	background: #333;
+	border-radius: 10px;
   }
   
   /* Handle on hover */
