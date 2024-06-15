@@ -1,6 +1,6 @@
 <template>
 	<div class="footer-menu">
-		2022 - 
+		2024 - 
 		<font-awesome-icon icon="copyright" />
 		Todos os direitos reservados
 	</div>

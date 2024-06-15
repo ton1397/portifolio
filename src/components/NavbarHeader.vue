@@ -1,9 +1,9 @@
 <template>
 	<div class="navbar-header">
-	<nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-transparent">
+	<nav id="navbar" class="navbar navbar-expand-md navbar-transparent">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<img src="@/assets/logo.png"/>
+				<img src="@/assets/logo.png" alt="logo"/>
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
 				<span><font-awesome-icon :icon="['fas','bars']" /></span>

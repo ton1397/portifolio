@@ -4,6 +4,8 @@ import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle';
 import './styles/themes.scss'
+import './utils/particle-swarm'
+import 'animate.css';
 
 import {library} from '@fortawesome/fontawesome-svg-core'
 import { faArrowUp, faBars, faMoon, faSun, faDownload, faLocationDot, faPhone, faEnvelope, faCopyright } from '@fortawesome/free-solid-svg-icons'

@@ -1,6 +1,6 @@
 <template>
 	<div class="page-view content-page-animation" id="experiencias">
-		<div class="container">
+		<div class="container animation_content" data-animate="animate__flipInX">
 			<h1 class="mb-5">Experiências</h1>
 			<ul class="timeline text-start">
 				<li class="timeline-item ms-3 pb-4">
@@ -12,7 +12,7 @@
 						<span class="small text-muted">São Paulo</span>
 					</div>
 					<div class="col-lg-7">
-						<p class="text-muted">Desenvolvimento de softwares, landing pages, funcionalidades em vuejs</p>                  
+						<p class="text-white">Desenvolvimento de softwares, landing pages, funcionalidades em vuejs</p>                  
 					</div>
 					</div>
 				</li>
@@ -22,10 +22,10 @@
 						<p class="font-weight-bold mb-2 text-primary text-small">08/2019 - 07/2022</p>
 						<h2 class="h6 mb-0 text-uppercase">PaginaViva CRM</h2>
 						<p class="text-small mb-0">Programador Jr.</p>
-						<span class="small text-muted">São Paulo</span>
+						<span class="small text-white">São Paulo</span>
 					</div>
 					<div class="col-lg-7">
-						<p class="text-muted">Desenvolvimento de novas funções, aplicativos e layouts com html, css, javascript e Vue.js, Manutenção de páginas em Wordpress e criação de robôs em python usando selenium</p>                  
+						<p class="text-white">Desenvolvimento de novas funções, aplicativos e layouts com html, css, javascript e Vue.js, Manutenção de páginas em Wordpress e criação de robôs em python usando selenium</p>                  
 					</div>
 					</div>
 				</li>
@@ -35,10 +35,10 @@
 						<p class="font-weight-bold mb-2 text-primary text-small">05/2019 - 07/2019</p>
 						<h2 class="h6 mb-0 text-uppercase">Desenvolvedor PHP</h2>
 						<p class="text-small mb-0">KNDOC</p>
-						<span class="small text-muted">São Paulo</span>
+						<span class="small text-white">São Paulo</span>
 					</div>
 					<div class="col-lg-7">
-						<p class="text-muted">Desenvolvimento de um projeto de gerenciamento de arquivos em nuvem.</p>
+						<p class="text-white">Desenvolvimento de um projeto de gerenciamento de arquivos em nuvem.</p>
 					</div>
 					</div>
 				</li>

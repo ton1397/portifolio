@@ -45,9 +45,15 @@ export default {
 	},
 	mounted(){
 		document.addEventListener('scroll', this.changeNavbar);
+
 		
 		setTimeout(() => {
-			document.getElementById('inicio').classList.add('content-page-show')
+			let element = document.getElementById('inicio')
+			element.classList.add('content-page-show')
+			let animation_el = element.querySelector('.animation_content')
+			animation_el.classList.add('animate__animated', animation_el.getAttribute('data-animate'))
+			window.dispatchEvent(new Event('init'))
+			document.getElementsByClassName('dg')[0].remove()
 		}, 100);
 		
 	},
@@ -56,26 +62,24 @@ export default {
 			this.theme = theme
 		},
 		changeNavbar(){
-			let scrollPosition = document.querySelector("html").scrollTop;
-			if (scrollPosition > 50) {
-				document.querySelector(".navbar-header .navbar").classList.add('navbar-scrolled-theme')
-				document.querySelector("#scrollTop").classList.add('fadeIn')
-				
-			}else{
-				document.querySelector(".navbar-header .navbar").classList.remove('navbar-scrolled-theme')
-				document.querySelector("#scrollTop").classList.remove('fadeIn')
-			}
-
 			let elementsArray = document.querySelectorAll(".content-page-animation");
 			for(let i=0; i < elementsArray.length; i++){
 				var rect = elementsArray[i].getBoundingClientRect();
 				var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
 				if(!(rect.bottom < 0 || rect.top - viewHeight >= 0)){
 					if(elementsArray[i].className.indexOf('content-page-show') == -1){
+						let animation_el = elementsArray[i].querySelector('.animation_content')
+						if(animation_el){
+							animation_el.classList.add('animate__animated', animation_el.getAttribute('data-animate'))
+						}
 						elementsArray[i].classList.add('content-page-show')
 					}
 				}else{
 					if(elementsArray[i].className.indexOf('content-page-show') != -1){
+						let animation_el = elementsArray[i].querySelector('.animation_content')
+						if(animation_el){
+							animation_el.classList.remove('animate__animated', animation_el.getAttribute('data-animate'))
+						}
 						elementsArray[i].classList.remove('content-page-show')
 					}
 				}
