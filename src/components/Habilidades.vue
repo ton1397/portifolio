@@ -72,7 +72,7 @@ export default {
 				{ img: require('../assets/vueLogo.png'), title: 'Vue.js' },
 				{ img: require('../assets/vuerouterLogo.png'), title: 'Vue Router' },
 				{ img: require('../assets/vuexLogo.png'), title: 'Vuex' },
-				{ img: require('../assets/piniaLogo.svg'), title: 'Pinia' },
+				{ img: require('../assets/piniaLogo.png'), title: 'Pinia' },
 			],
 
 			habilidades_backend: [
@@ -81,7 +81,7 @@ export default {
 				{ img: require('../assets/rustLogo.png'), title: 'Rust' },
 				{ img: require('../assets/graphqlLogo.png'), title: 'GraphQL Api' },
 				{ img: require('../assets/nodejsLogo.png'), title: 'Node.js' },
-				{ img: require('../assets/mongodbLogo.svg'), title: 'MongoDB' },
+				{ img: require('../assets/mongodbLogo.png'), title: 'MongoDB' },
 				{ img: require('../assets/mysqlLogo.png'), title: 'MySQL' },
 				{ img: require('../assets/sqlserverLogo.png'), title: 'SQL Server' },
 				{ img: require('../assets/firebaseLogo.png'), title: 'Firebase' },
