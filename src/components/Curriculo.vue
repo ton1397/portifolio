@@ -5,7 +5,7 @@
 				<div class="col-md-6">
 					<div class="animation_content" data-animate="animate__fadeInRightBig">
 						<h1 class="mb-5 fw-bold">Curriculo</h1>
-						<p>Atualmente trabalho como programador pleno. na empresa ECWSA.</p>
+						<p>Atualmente trabalho como programador pleno.</p>
 						<p>Sou formado em análise e desenvolvimento de sistemas na universidade UNIP.</p>
 						<p>Concluí o curso tecnico de informática com ênfase em programação.</p>
 						<p>Já concluí diversos cursos de programação como Sass, PHP, VueJs, Javascript, NodeJs.</p>

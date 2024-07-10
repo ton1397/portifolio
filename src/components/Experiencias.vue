@@ -6,13 +6,17 @@
 				<li class="timeline-item ms-3 pb-4">
 					<div class="row no-gutter">
 					<div class="col-lg-5 mb-4 mb-lg-0">
-						<p class="font-weight-bold mb-2 text-primary text-small">07/2022 - Atualmente</p>
+						<p class="font-weight-bold mb-2 text-primary text-small">07/2022 - 05/2024</p>
 						<h2 class="h6 mb-0 text-uppercase">ECWSA</h2>
-						<p class="text-small mb-0">Frontend pleno</p>
+						<p class="text-small mb-0">Full Stack pleno</p>
 						<span class="small text-muted">São Paulo</span>
 					</div>
 					<div class="col-lg-7">
-						<p class="text-white">Desenvolvimento de softwares, landing pages, funcionalidades em vuejs</p>                  
+						<p class="text-white">
+							Desenvolvimento de softwares, landing pages, funcionalidades em vuejs.
+							<br>
+							Desenvolvimento de apis rest e graphql com python(django e fastapi) e rust(actix web e async graphql).
+						</p>
 					</div>
 					</div>
 				</li>

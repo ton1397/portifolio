@@ -86,7 +86,8 @@ export default {
 				{ img: require('../assets/sqlserverLogo.png'), title: 'SQL Server' },
 				{ img: require('../assets/firebaseLogo.png'), title: 'Firebase' },
 				{ img: require('../assets/gitLogo.png'), title: 'GIT' },
-				{ img: require('../assets/githubLogo.png'), title: 'Github' }
+				{ img: require('../assets/githubLogo.png'), title: 'Github' },
+				{ img: require('../assets/laravel-logo.webp'), title: 'Laravel' }
 			],
 		};
 	}
