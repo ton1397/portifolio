@@ -1,6 +1,6 @@
 <template>
 	<div class="footer-menu">
-		2024 - 
+		{{ new Date().getFullYear() }} - 
 		<font-awesome-icon icon="copyright" />
 		Todos os direitos reservados
 	</div>
