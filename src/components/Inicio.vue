@@ -19,9 +19,9 @@
 				</div>
 				
 			</div>
-			<div class="roll-content">
+			<button class="roll-content" type="button" aria-label="Ir para o currículo" @click="$parent.scrollToElement('#curriculo')">
 				<lottie-player src="https://lottie.host/796fae71-4270-48af-aabf-e2c0eb5bf0e7/EWyYbAJ9QQ.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
-			</div>
+			</button>
 		</div>
 	</div>
 </template>

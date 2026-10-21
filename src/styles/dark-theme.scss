@@ -7,15 +7,17 @@ $color-theme: #2acdff;
 	transition: .3s;
 
 	.navbar-scrolled-theme{
-		background-color: $color-theme !important;
+		background-color: rgba(0, 0, 0, .82) !important;
+		backdrop-filter: blur(12px);
+		box-shadow: 0 1px 0 rgba(42, 205, 255, .45);
 		color: #fff;
 
 		.nav-item a.active, .nav-item a:hover{
-			border-bottom: 2px solid;
+			border-bottom: 2px solid $color-theme;
 		}
 
 		.nav-link{
-			color: $bg-theme !important;
+			color: #fff !important;
 		}
 
 		.theme-switch-label{

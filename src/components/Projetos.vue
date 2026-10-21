@@ -1,9 +1,10 @@
 <template>
 	<div class="page-view content-page-animation" id="projetos">
 		<div class="container">
-			<h1 class="mb-5">Projetos</h1>
+			<h1 class="mb-2">Projetos</h1>
+			<p class="section-hint">Passe o mouse ou clique no card para ver o projeto.</p>
 			<carousel :items-to-show="1" :autoplay="slide_hover" :wrap-around="true" @mouseenter="slide_hover = 0" @mouseleave="slide_hover = 5000">
-				<slide v-for="slide in slides" :key="slide" :style="{ backgroundImage: 'url(' + require('@/assets/' + slide.background) + ')', backgroundSize: 'cover' }">
+				<slide v-for="slide in slides" :key="slide.title" :class="{ 'is-open': opened === slide.title }" @click="toggleSlide(slide.title)" :style="{ backgroundImage: 'url(' + require('@/assets/' + slide.background) + ')', backgroundSize: 'cover' }">
 				<div class="slide-wrapper position-relative">
 					<div class="slide-content">
 						<h1>{{ slide.title }}</h1>
@@ -12,7 +13,7 @@
 						<p>
 							{{ slide.stacks.join(', ') }}
 						</p>
-						<a class="btn btn-outline-primary btn-lg" :href="slide.url" target="blank">Ver Página</a>
+						<a class="btn btn-outline-primary btn-lg" :href="slide.url" target="_blank" rel="noopener noreferrer" @click.stop>Ver Página</a>
 					</div>
 				</div>
 				</slide>
@@ -39,6 +40,7 @@ export default {
 	data(){
 		return {
 			slide_hover: 5000,
+			opened: null,
 			slides: [
 			{
 				title: 'Task Manager',
@@ -114,9 +116,8 @@ export default {
 		}
 	},
 	methods: {
-		getImage(image){
-			console.log(image);
-			return '' + image
+		toggleSlide(title) {
+			this.opened = this.opened === title ? null : title;
 		}
 	}
 };

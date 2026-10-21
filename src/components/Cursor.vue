@@ -43,8 +43,10 @@ methods: {
   padding: 1em 2em;
 }
 
+@media (pointer: fine) {
 body{
 	cursor: none;
+}
 }
 .cursor {
     pointer-events: none;

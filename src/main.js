@@ -10,11 +10,11 @@ import "@lottiefiles/lottie-player";
 
 
 import {library} from '@fortawesome/fontawesome-svg-core'
-import { faArrowUp, faBars, faMoon, faSun, faDownload, faLocationDot, faPhone, faEnvelope, faCopyright } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUp, faBars, faMoon, faSun, faDownload, faLocationDot, faPhone, faEnvelope, faCopyright, faCopy } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faArrowUp, faBars, faMoon, faSun, faDownload, faLocationDot, faPhone, faEnvelope, faWhatsapp, faCopyright, faLinkedin, faGithub)
+library.add(faArrowUp, faBars, faMoon, faSun, faDownload, faLocationDot, faPhone, faEnvelope, faWhatsapp, faCopyright, faLinkedin, faGithub, faCopy)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

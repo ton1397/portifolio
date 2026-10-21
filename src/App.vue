@@ -1,5 +1,7 @@
 <template>
 	<div id="main-page" :class="theme">
+		<div class="scroll-progress" :style="{ transform: 'scaleX(' + progress + ')' }"></div>
+		<div v-if="toast" class="toast-note" role="status">{{ toast }}</div>
 		<Cursor/>
 		<navbar-header/>
 		<div>
@@ -26,6 +28,7 @@ import Experiencias from "./components/Experiencias.vue"
 import Contato from "./components/Contato.vue"
 import FooterMenu from "./components/FooterMenu.vue"
 import throttle from 'lodash/throttle';
+import { Collapse } from 'bootstrap'
 export default {
 	name: "App",
 	components: {
@@ -41,13 +44,20 @@ export default {
 	},
 	data(){
 		return{
-			theme: "dark"
+			theme: "dark",
+			progress: 0,
+			toast: "",
+			toastTimer: null,
+			activeSection: "inicio",
+			scrolled: false,
+			scrolledFar: false
 		}
 	},
 	mounted() {
 		// Adiciona o evento de rolagem com throttling
 		this.throttledChangeNavbar = throttle(this.changeNavbar, 100);
 		document.addEventListener('scroll', this.throttledChangeNavbar);
+		this.changeNavbar();
 
 		setTimeout(() => {
 			let element = document.getElementById('inicio');
@@ -59,14 +69,37 @@ export default {
 		}, 100);
 	},
 	beforeDestroy() {
-		// Remove o evento de rolagem ao destruir o componente
 		document.removeEventListener('scroll', this.throttledChangeNavbar);
+		clearTimeout(this.toastTimer);
 	},
 	methods: {
+		notify(message) {
+			this.toast = message;
+			clearTimeout(this.toastTimer);
+			this.toastTimer = setTimeout(() => {
+				this.toast = "";
+			}, 2400);
+		},
 		changeTheme(theme) {
 			this.theme = theme;
 		},
 		changeNavbar() {
+			const scrollTop = window.scrollY || document.documentElement.scrollTop;
+			const height = document.documentElement.scrollHeight - window.innerHeight;
+			this.progress = height > 0 ? Math.min(scrollTop / height, 1) : 0;
+			this.scrolled = scrollTop > 40;
+			this.scrolledFar = scrollTop > 500;
+
+			const sections = ["inicio", "curriculo", "projetos", "habilidades", "experiencias", "contato"];
+			let current = "inicio";
+			sections.forEach((id) => {
+				const section = document.getElementById(id);
+				if (section && section.getBoundingClientRect().top < 140) {
+					current = id;
+				}
+			});
+			this.activeSection = current;
+
 			let elementsArray = document.querySelectorAll('.content-page-animation');
 			for (let i = 0; i < elementsArray.length; i++) {
 				var rect = elementsArray[i].getBoundingClientRect();
@@ -92,7 +125,14 @@ export default {
 		},
 		scrollToElement(href) {
 			let element = document.querySelector(href);
-			element.scrollIntoView();
+			if (!element) {
+				return;
+			}
+			element.scrollIntoView({ behavior: "smooth", block: "start" });
+			const menu = document.getElementById("nav-list");
+			if (menu && menu.classList.contains("show")) {
+				Collapse.getOrCreateInstance(menu).hide();
+			}
 		}
 	}
 };
